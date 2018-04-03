@@ -30,4 +30,10 @@ public class OrderController {
         Order order = orderService.findById(id);
         return orderService.updateModel(order);
     }
+
+    @RequestMapping("/updateModelByTemplate/{id}")
+    public String updateModelByTemplate(@PathVariable String id){
+        Order order = orderService.findById(id);
+        return orderService.updateModelByTemplate(order);
+    }
 }

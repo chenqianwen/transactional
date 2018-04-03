@@ -6,4 +6,6 @@ orderServiceImpl中updateModel方法上的@Transactional
 @Transactional声明式事务：
 锁定整个方法内部。在远程响应之前，事务不会释放，数据库链接不会释放。
 
- 
+编程式事务:
+通过transactionTemplate
+transactionTemplate.execute(new TransactionCallback<Object>(){});

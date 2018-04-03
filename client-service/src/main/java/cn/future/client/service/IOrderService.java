@@ -10,4 +10,5 @@ import cn.future.client.support.IBaseService;
  */
 public interface IOrderService extends IBaseService<Order> {
    String updateModel(Order model);
+   String updateModelByTemplate(Order model);
 }
